@@ -1,0 +1,2 @@
+# RedTimer
+Simple Javascript Timer
