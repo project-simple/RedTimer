@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>RedTimer TestCase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="RedTimer.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        #testBox {
+            position: relative;
+            border: 1px solid #333;
+            height: 100px;
+        }
+
+        #testBar {
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background: aqua;
+        }
+
+        #testInfo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>RedTimer TestCase</h1>
+    <div id="testBox">
+        <div id="testBar"></div>
+        <div id="testInfo">
+        </div>
+    </div>
+    <select id="selectTime">
+        <option value="1000">1000</option>
+        <option value="2000">2000</option>
+        <option value="3000" selected>3000</option>
+        <option value="10000">10000</option>
+    </select>
+    <button id="makeTimer">makeTimer</button>
+    <button id="destroyTimer">destroyTimer</button>
+    <script>
+		var UUID = 0;
+		var currentTimer;
+		var updateCallback = function () {
+			document.getElementById('testInfo').innerHTML = [
+				'startTime : ' + this.startTime,
+				'endTime : ' + this.endTime,
+				'remainTime : ' + this.remainTime,
+				'elapsedTime : ' + this.elapsedTime,
+				'duration : ' + this.duration,
+			].join('<br>')
+			document.getElementById('testBar').style.width = Math.min(this.elapsedTime / this.duration, 100) * 100 + '%'
+		}
+
+		document.getElementById('makeTimer').addEventListener('click', function () {
+			currentTimer = RedTimer(
+				'Test' + UUID++,
+				+document.getElementById('selectTime').value,
+				updateCallback,
+				function () {
+
+				}
+			)
+		})
+
+		document.getElementById('destroyTimer').addEventListener('click', function () {
+			if (currentTimer) currentTimer.destroy()
+			currentTimer = null
+		})
+    </script>
+</div>
+</body>
+</html>
