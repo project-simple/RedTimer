@@ -47,7 +47,7 @@ import RedTimer from 'project-simple-red-timer';
 
 #### property
 | name | description | read/write | type |
-|---|:---|---:|
+|---|:---|---|---:|
 | `key` | Timer key | read-only  |`string` |
 | `duration` | Timer duration | read/write |`positive number`(Millisecond) |
 | `startTime` | Timer startTime | read-only |`number`(Millisecond) |
