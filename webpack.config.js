@@ -7,7 +7,7 @@ module.exports = (function () {
 		mode:'none',
 		entry : {},
 		output: {
-			library: 'RedTimer',
+			library: fileName,
 			libraryTarget: "umd",
 			libraryExport: "default",
 			umdNamedDefine: true,
