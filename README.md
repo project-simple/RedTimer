@@ -44,7 +44,7 @@ import RedTimer from 'project-simple-red-timer';
     console.log(t0 instanceof RedTimer); // true
     console.log(t1 instanceof RedTimer); // auto call constructor
 ```
-
+---
 ### property
 | name | description | read/write | type |
 |---|:---|---|---:|
@@ -54,7 +54,7 @@ import RedTimer from 'project-simple-red-timer';
 | `endTime` | Timer endTime | read-only |`number`(Millisecond) |
 | `elapsedTime` | Timer elapsedTime | read-only |`number`(Millisecond) |
 | `remainTime` | Timer remainTime | read-only |`number`(Millisecond) |
-
+---
 ```javascript
     RedTimer(
         'testKey_1',
@@ -72,6 +72,7 @@ import RedTimer from 'project-simple-red-timer';
     );
 ```
 
+---
 ### method
 - #### (RedTimer Instance).destroy()
 ```javascript
@@ -80,6 +81,7 @@ import RedTimer from 'project-simple-red-timer';
 ```
 - Target timer destroyed immediately (endCallback not called)
 
+---
 ### static method
 - #### RedTimer.destroyAll()
 ```javascript
