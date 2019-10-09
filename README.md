@@ -17,7 +17,7 @@ import RedTimer from 'project-simple-red-timer';
 ```
 #### browser
 ```html
-<script src="https://project-simple.github.io/RedTimer/RedTimer.js"></script>
+<script src="https://project-simple.github.io/RedTimer/dist/RedTimer.min.js"></script>
 <script>
     RedTimer(
         'testKey_1',

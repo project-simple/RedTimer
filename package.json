@@ -1,6 +1,6 @@
 {
   "name": "project-simple-red-timer",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Simple Javascript Timer",
   "main": "dist/RedTimer.min.js",
   "scripts": {
