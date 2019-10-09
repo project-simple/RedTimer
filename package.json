@@ -1,9 +1,11 @@
 {
   "name": "project-simple-red-timer",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Simple Timer",
   "main": "RedTimer.js",
   "scripts": {
+    "npmVersionPatch": "npm --no-git-tag-version version patch",
+    "npmPublish": "npm adduser && npm publish",
     "mochaTest": "mocha testMocha/*.test.js --watch   --allow-uncaught  ",
     "mochaTest:browser": "live-server --port=9001 --entry-file=testRun_browser.html",
     "visualTest:browser": "live-server --port=9001 --entry-file=testRun_browser2.html"
