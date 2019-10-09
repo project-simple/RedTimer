@@ -94,5 +94,5 @@ import RedTimer from 'project-simple-red-timer';
 - Destroys the currently active RedTimer instance. (endCallback not called)
 
 ## TestCase
-- MochaTest : [here](testRun_browser.html)
-- VisualTest : [here](testRun_browser2.html)
+- MochaTest : [here](https://project-simple.github.io/RedTimer/testRun_browser.html)
+- VisualTest : [here](https://project-simple.github.io/RedTimer/testRun_browser2.html)
