@@ -1,7 +1,7 @@
 {
   "name": "project-simple-red-timer",
-  "version": "1.0.13",
-  "description": "Simple Timer",
+  "version": "1.0.14",
+  "description": "Simple Javascript Timer",
   "main": "RedTimer.js",
   "scripts": {
     "npmVersionPatch": "npm --no-git-tag-version version patch",
@@ -16,7 +16,8 @@
   },
   "keywords": [
     "timer",
-    "red-timer"
+    "red-timer",
+    "project-simple"
   ],
   "author": {
     "name": "redcamel",
