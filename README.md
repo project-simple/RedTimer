@@ -30,7 +30,7 @@ import RedTimer from 'project-simple-red-timer';
 
 # API
 
-### RedTimer(key, duration, updateCallback, endCallback)
+## RedTimer(key, duration, updateCallback, endCallback)
 | param | description | type |
 |---|:---|---:|
 | `key` | unique key | `string` |
@@ -44,8 +44,8 @@ import RedTimer from 'project-simple-red-timer';
     console.log(t0 instanceof RedTimer); // true
     console.log(t1 instanceof RedTimer); // auto call constructor
 ```
----
-### property
+
+## property
 | name | description | read/write | type |
 |---|:---|---|---:|
 | `key` | Timer key | read-only  |`string` |
@@ -54,7 +54,7 @@ import RedTimer from 'project-simple-red-timer';
 | `endTime` | Timer endTime | read-only |`number`(Millisecond) |
 | `elapsedTime` | Timer elapsedTime | read-only |`number`(Millisecond) |
 | `remainTime` | Timer remainTime | read-only |`number`(Millisecond) |
----
+
 ```javascript
     RedTimer(
         'testKey_1',
@@ -72,8 +72,8 @@ import RedTimer from 'project-simple-red-timer';
     );
 ```
 
----
-### method
+
+## method
 - #### (RedTimer Instance).destroy()
 ```javascript
     var t0 = RedTimer('testDestroy',1000,function(){},function(){})
@@ -81,8 +81,8 @@ import RedTimer from 'project-simple-red-timer';
 ```
 - Target timer destroyed immediately (endCallback not called)
 
----
-### static method
+
+## static method
 - #### RedTimer.destroyAll()
 ```javascript
     RedTimer( 'testDestroyAll_1', 1000, function(){}, function(){} );
@@ -92,3 +92,7 @@ import RedTimer from 'project-simple-red-timer';
     RedTimer.destroyAll();
 ```
 - Destroys the currently active RedTimer instance. (endCallback not called)
+
+## TestCase
+- MochaTest : [here](testRun_browser.html)
+- VisualTest : [here](testRun_browser2.html)
