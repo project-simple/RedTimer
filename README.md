@@ -19,7 +19,12 @@ import RedTimer from 'project-simple-red-timer';
 ```html
 <script src="https://project-simple.github.io/RedTimer/RedTimer.js"></script>
 <script>
-   RedTimer('testKey_1',1000,function(){}, function(){});
+    RedTimer(
+        'testKey_1',
+        1000,
+        function(){}, 
+        function(){}
+    );
 </script>
 ```
 
