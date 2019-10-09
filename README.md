@@ -73,7 +73,7 @@ import RedTimer from 'project-simple-red-timer';
 ```
 
 ### method
-####(RedTimer Instance).destroy()
+- #### (RedTimer Instance).destroy()
 ```javascript
     var t0 = RedTimer('testDestroy',1000,function(){},function(){})
     t0.destroy();
@@ -81,7 +81,7 @@ import RedTimer from 'project-simple-red-timer';
 - Target timer destroyed immediately (endCallback not called)
 
 ### static method
-#### RedTimer.destroyAll()
+- #### RedTimer.destroyAll()
 ```javascript
     RedTimer( 'testDestroyAll_1', 1000, function(){}, function(){} );
     RedTimer( 'testDestroyAll_2', 2000, function(){}, function(){} );
