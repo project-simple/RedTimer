@@ -4,7 +4,6 @@
   "description": "Simple Timer",
   "main": "RedTimer.js",
   "scripts": {
-
     "mochaTest": "mocha testMocha/*.test.js --watch   --allow-uncaught  ",
     "mochaTest:browser": "live-server --port=9001 --entry-file=testRun_browser.html",
     "visualTest:browser": "live-server --port=9001 --entry-file=testRun_browser2.html"
